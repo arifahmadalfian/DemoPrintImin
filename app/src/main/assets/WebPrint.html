@@ -1,0 +1,159 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Print Demo</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="text/javascript" src="jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="jquery.jqprint-0.3.js"></script>
+<style>
+	body{font-size: 12px!important;font-family: 'Arial Normal', 'Arial';background-color: #F5F5F5;color: #333333;}
+	#PrintContent{width: 290px;padding: 20px; margin: 0 auto; line-height: 22px; overflow: auto;background-color: #FFFFFF;}
+	.clearboth{clear: both;}
+	.fs12{font-size: 12px!important;}
+	.fs13{font-size: 13px!important;}
+	.fs16{font-size: 16px!important;}
+	.fs18{font-size: 18px!important;}
+	.fs28{font-size: 28px!important;}
+	.fs22{font-size: 22px!important;}
+	.center{text-align: center;}
+	.left{float: left;}
+	.right{float: right;}
+	.mgt5{margin-top: 5px;}
+	.mgt10{margin-top: 10px;}
+	.pdt20{padding-top: 20px;}
+	.pdt10{padding-top: 10px;}
+	.line{border-bottom: 1px dotted #333333;height: 5px;}
+	.middle{position: absolute;right: 80px;width: 20px;text-align: center;}
+	.relative{position: relative;}
+	.mgl20{margin-left: 20px;}
+	#PrintEvent{width: 80px;height: 35px;font-size: 16px; background-color: #0050F1;color: #FFFFFF;text-align: center;border: 0px;margin: 20px auto;display: inherit;border-radius: 5px;cursor: pointer;}
+	#PrintEvent:hover{background-color: #0146d2;}
+	
+@media print {
+	html,body {
+	    font-size: 10px!important;
+	    width:80mm;
+	    height:297mm;
+		font-weight: normal;
+	}
+}	
+</style>
+</head>
+<body>
+	
+	<input type="button" id="PrintEvent" value="Print"/>
+	
+<div id="PrintContent" style="font-size: 10px!important;font-weight: normal;">
+<!-- 要打印的内容 -->
+<div style="text-align:center;font-size: 12px;">Hoshino Coffce - ION Orchand</div>
+<div style="text-align:center;margin-top: 10px;font-size: 10px;">
+REG Nn：200501519R<br/>
+GST No.：20-0501519-R
+</div>
+<div style="font-size: 10px;text-align:center;margin-top:10px;width: 100%;">
+2 Orchand Turn，#B3-25/26，ION Orchand 
+</div>
+<div style="font-size: 10px;text-align:center;width: 100%;">
+Singapore 238801</br/>	
+PHONE：+65 6509 8638
+</div>
+<div style="font-size: 10px;text-align:left; margin-top:10px;width: 100%;">
+CUSTOMER: Chen Kai hui
+</div>
+<div style="font-size: 14px;text-align:center;width: 100%;padding-top: 10px;"><strong>Table 06</strong></div>
+<div style="font-size: 12px;text-align:center;width: 100%;padding-top: 5px;"><strong>#Pax:2</strong></div>
+<div style="font-size: 10px;text-align:center;width: 100%;">
+Order:#698727
+</div>
+<div style="font-size: 10px;text-align:left; margin-top:10px;width: 100%;">
+RECEIPT: #703396
+</div>
+
+<div style="font-size: 10px;text-align:left; padding-top:10px;width: 100%;">
+<span style="font-size:10px!important;width: 50%;" >Date: 11/11/2019</span>  <span style="font-size:10px !important;float: right; text-align: right;width: 50%;">Time: 18:47</span>
+</div>
+
+<div style="font-size: 10px;position: relative; padding-top:10px;width: 100%;overflow: auto;">
+<span style="font-size: 10px;float: left; width: 50%;">Dish(es)</span> <span style="font-size: 10px;position: absolute; right: 30%;width: 20px!important;text-align: center;">Qty</span>  <span style="font-size: 10px;float: right;text-align: right; width: 50%;">Amount</span>
+</div>
+<div style="padding-top:10px;width: 100%;border-bottom: 1px dotted #333333;height: 5px!important;"></div>
+
+<div style="font-size: 10px;position: relative; padding-top:5px;width: 100%;overflow: auto;">
+<span style="font-size: 10px;float: left; width: 50%;">D1 HOSHINO COFFCE</span> <span style="font-size: 10px;position: absolute; right: 30%;width: 20px!important;text-align: center;">1</span>  <span style="font-size: 10px;float: right;text-align: right; width: 50%;">S$6.20</span>
+</div>
+
+<div style="font-size: 10px;position: relative; padding-top:10px;width: 100%;overflow: auto;">
+<span style="font-size: 10px;float: left; width: 50%;">Hoshino SP  set 2pax</span> <span style="font-size: 10px;position: absolute; right: 30%;width: 20px!important;text-align: center;">1</span>  <span style="font-size: 10px;float: right;text-align: right; width: 50%;">S$59.90</span>
+</div>
+
+<div style="font-size: 8px;margin-top: 5px; margin-left: 2% ; width: 98%;">
+[1] D13 ICE  FRUIT TEA
+</div>
+<div style="font-size: 8px;margin-top: 5px; margin-left: 2% ; width: 98%;">
+[1] Darjeeling Tea(Straight)
+</div>
+
+<div style="font-size: 8px;margin-top: 5px; margin-left: 2% ; width: 98%;">
+[1] F9 SALAD OMU STEAK
+</div>
+<div style="font-size: 8px;margin-top: 5px; margin-left: 2% ; width: 98%;">
+[1] Roast  Beef  Cabonara
+</div>
+<div style="font-size: 8px;margin-top: 5px; margin-left: 2% ; width: 98%;">
+[1] S2 DOUBLE PANCAKE
+</div>
+<div style="padding-top:10px;width: 100%;border-bottom: 1px dotted #333333;height: 5px!important;"></div>
+
+<div style="font-size:10px;padding-top:10px;width: 100%;">
+<span style="font-size:10px!important;width: 60%;">Sub-total</span>  <span style="font-size:10px !important;float: right; text-align: right;width: 40%;">S$66.10</span>
+</div>
+
+<div style="font-size:10px;padding-top:10px;width: 100%;">
+<span style="font-size:10px!important;width: 50%;">Service charge (10%)</span>  <span style="font-size:10px !important;float: right; text-align: right;width: 50%;">S$6.10</span>
+</div>
+<div style="font-size:10px;padding-top:10px;width: 100%;">
+<span style="font-size:10px!important;width: 50%;">GTS (7%)</span>  <span style="font-size:10px !important;float: right; text-align: right;width: 50%;">S$5.09</span>
+</div>
+
+<div style="padding-top:10px;width: 100%;border-bottom: 1px dotted #333333;height: 5px!important;"></div>
+<div style="font-size:10px;padding-top:10px;width: 100%;">
+<span style="font-size:10px!important;width: 50%;">Grand total (SGD)</span>  <span style="font-size:10px !important;float: right; text-align: right;width: 50%;">S$5.09</span>
+</div>
+<div style="font-size:10px;padding-top:10px;width: 100%;">
+<span style="font-size:10px!important;width: 50%;">Card (UnlonPay)</span>  <span style="font-size:10px !important;float: right; text-align: right;width: 50%;">S$77.90</span>
+</div>
+
+<div style="font-size:10px;padding-top:20px;width: 100%;text-align: center;">
+We want  to hear from you!
+</div>
+
+<div style="font-size:10px;padding-top:10px;width: 100%;text-align: center;">
+Please scan the OR code and fill-in our feedback form
+</div>
+
+<div style="padding-top:10px;width: 100%;text-align: center;">
+<img src="rq.png" >
+</div>
+
+ 
+<!-- 要打印的内容 end-->  
+</div>
+
+
+</body>
+
+<script type="text/javascript">
+	
+	$("#PrintEvent").click(function(){
+		$("#PrintContent").jqprint();//指定区域内容打印	
+	})
+	
+</script>
+
+
+
+</html>
